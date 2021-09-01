@@ -1,12 +1,8 @@
-import './App.css';
-import HomePage from './homepage.components.jsx';
+import React from 'react';
+import HomePage from './components/pages/homepage.components.jsx';
 
 function App() {
-  return (
-    <div className="App">
-      <HomePage />
-    </div>
-  );
+  return <HomePage />
 }
 
 export default App;
