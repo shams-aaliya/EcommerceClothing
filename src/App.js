@@ -5,7 +5,8 @@ import HomePage from './components/pages/homepage.components.jsx';
 
 function App() {
   
-  const Hats = () => {
+  const Hats = (props) => {
+    console.log(props);
     return <h1>Hats</h1>
   }
   
