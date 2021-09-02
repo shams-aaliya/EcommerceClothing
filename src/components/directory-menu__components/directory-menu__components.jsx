@@ -46,8 +46,8 @@ export class DirectoryMenu extends Component {
         return (
             <div className="directory-menu">
             {
-                this.state.section.map(({title,imageUrl,id,size}) => (
-                    <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+                this.state.section.map(({id, ...someSectionAttr}) => (
+                    <MenuItem key={id} {...someSectionAttr}/>
                 ))
             }
 
